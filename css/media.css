@@ -1,0 +1,51 @@
+/* ===================MEDIA=============== */
+/* Minimal size screen 320px */
+@media (max-width: 860px) {
+  .menu {
+    order: 1;
+  }
+  .menu__list {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    background-color: #332208;
+    text-align: center;
+    transform: translateY(-450px);
+  }
+  .menu__list.menu__list--active {
+    transform: translateY(0);
+  }
+  .menu__list-link {
+    padding: 20px 0;
+    display: block;
+  }
+  .menu__btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-top: 2px solid #fefefe;
+    border-bottom: 2px solid #fefefe;
+    background-color: transparent;
+    position: relative;
+  }
+  .menu__btn::before {
+    content: "";
+    position: absolute;
+    background-color: #fefefe;
+    width: 30px;
+    height: 2px;
+    left: 0;
+    top: 12px;
+  }
+}
+@media (max-width: 390px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+}
